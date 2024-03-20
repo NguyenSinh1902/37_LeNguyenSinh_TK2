@@ -1,0 +1,125 @@
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0.5rem; /* Reduce padding to create more space for the background */
+  }
+
+.container {
+    background-image: url('./images/bg.jpg'); /* Đường dẫn đến hình ảnh của bạn */
+    background-size: cover; /* Đảm bảo hình ảnh sẽ bao phủ toàn bộ phần tử <body> */
+    background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* Reduce border radius */
+    box-shadow: none;
+    /* Remove box shadow */
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+    /* Increase margin bottom */
+}
+
+.heading__title {
+    padding: 0.5rem 1rem;
+    text-align: center; /* Căn chỉnh văn bản vào giữa */
+    font-family: Arial, sans-serif; /* Kiểu chữ */
+    font-size: 36px; /* Kích thước chữ */
+    color: #e9e3e3; /* Màu chữ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng văn bản */
+}
+
+.form__label {
+    font-weight: bold;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+.form__input {
+    background: rgba(255, 255, 255, 0.5);
+    /* Change input background to light gray */
+    padding: 0.8rem 1rem;
+    /* Increase padding */
+    border: 1px solid #ccc;
+    /* Add solid border */
+    border-radius: 5px;
+    /* Change border radius */
+    font-size: 1rem;
+    /* Maintain font size */
+    transition: all 0.2s ease-in-out;
+    /* Add smooth transition on focus */
+    margin-top: 30px;
+}
+
+.form__input:focus {
+    border-color: #428bca;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove outline */
+}
+
+.button {
+    background-color: #4CAF50; /* Màu nền của nút */
+    border: none; /* Loại bỏ đường viền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Kích thước của nút */
+    text-align: center; /* Căn chỉnh văn bản vào giữa */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    display: inline-block;
+    font-size: 16px; /* Cỡ chữ */
+    margin: 4px 2px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Hình con trỏ khi di chuyển qua nút */
+    border-radius: 8px; /* Bo góc nút */
+    transition-duration: 0.4s; /* Thời gian chuyển đổi */
+}
+
+.button:hover {
+    background-color: #45a049; /* Màu nền của nút khi di chuột qua */
+}
+
+.toDoList {
+    list-style-type: none;
+    /* Remove default list style */
+    padding: 30px;
+    /* Remove default padding */
+}
+
+.toDoList li {
+    padding: 0.5rem 1rem;
+    /* Maintain padding */
+    font-size: 1;
+    font-family: "Arial Black", Arial, sans-serif; /* Kiểu chữ */
+    font-size: 20px; /* Kích thước chữ */
+    color: #fcfcfc; /* Màu chữ */
+    font-weight: bold; /* Chữ in đậm */
+    letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng văn bản */
+    text-align: left;
+    margin-left: 50px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.deleteBtn {
+    background-color: #4CAF50; /* Màu nền của nút */
+    border: none; /* Loại bỏ đường viền */
+    color: white; /* Màu chữ */
+    text-align: center; /* Căn chỉnh văn bản vào giữa */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 16px; /* Cỡ chữ */
+    cursor: pointer; /* Hình con trỏ khi di chuyển qua nút */
+    border-radius: 8px; /* Bo góc nút */
+    transition-duration: 0.4s; /* Thời gian chuyển đổi */
+}
+
+.deleteBtn:hover {
+    background-color: #45a049; /* Màu nền của nút khi di chuột qua */
+}

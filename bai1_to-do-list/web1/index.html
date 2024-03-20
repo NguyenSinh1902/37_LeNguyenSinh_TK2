@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-do-list_Web1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>TO-DO-LIST</h1>
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Add New Task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="board" id="todo-board" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>To-Do</h2>
+            <ul id="todo-list" class="sortable">
+
+            </ul>
+        </div>
+        <div class="board" id="completed-board" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Completed</h2>
+            <ul id="completed-list" class="sortable">
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

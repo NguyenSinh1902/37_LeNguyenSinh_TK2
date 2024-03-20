@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/photo-16031988.webp'); /* Đường dẫn đến hình ảnh của bạn */
+    background-size: cover; /* Đảm bảo hình ảnh sẽ bao phủ toàn bộ phần tử <body> */
+    background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.add-task {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 40rem;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background-color: #218838;
+}
+
+.board {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 40rem;
+}
+
+.board h2 {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #e9ecef;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+/* Style for the task item */
+.task-item {
+    flex: 1;
+    /* Để nó chiếm 80% của chiều ngang */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style for the delete button */
+.deleteBtn {
+    /* Để nó chiếm 20% của chiều ngang */
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: #ff3333;
+}

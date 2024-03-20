@@ -1,0 +1,331 @@
+
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 8px;
+
+}
+
+
+.fab {
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 50%;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 5px;
+    text-align: center;
+}
+
+a .fab {
+    color: rgb(230, 227, 227);
+}
+
+
+/* header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #f8b9dc;
+    color: #085720;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+header img {
+    margin-left: 2rem;
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header p {
+    margin-left: 2rem;
+    font-weight: bolder;
+    font-size: 24px; /* Increase font size */
+/* }
+
+header ul {
+    flex: 1;
+    text-align: left;
+    padding-left: 0;
+    list-style-type: none;
+    margin-left: 65%;
+    padding: 0;
+} */
+*/ header ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #9e9898;
+}
+
+header ul li a {
+    color: hsl(0, 5%, 54%);
+    text-decoration: none;
+
+}
+
+.header ul li a {
+    display: inline-block;
+    padding: 25px 50px;
+    margin-right: 10px;
+    background-color: #303030;
+    color: #FFC0CB;
+    text-decoration: solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* align-items: right;
+    justify-content: right; */
+}
+
+.header ul li a:hover {
+    background-color: cadetblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Đảm bảo các phần tử nằm ở hai bên */
+    align-items: center;
+    /* Canh giữa các phần tử theo trục dọc */
+    background-color: #FFC0CB;
+    color: #085720;
+}
+
+header img {
+    margin-left: 2rem;
+    border-radius: 50%;
+    max-width: 150px;
+    margin-right: 100px;
+    /* Khoảng cách mong muốn */
+}
+
+.header {
+    flex: 1;
+    /* Phần còn lại của header để chứa ul */
+    display: flex;
+    justify-content: center;
+    /* Canh giữa theo trục ngang */
+}
+
+.header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header ul li:last-child {
+    margin-right: 0;
+    /* Loại bỏ margin phải của phần tử cuối cùng */
+}
+
+
+
+header ul li a:hover {
+    text-decoration: dotted;
+    color: rgb(9, 97, 9);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    /* Increase font size */
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+footer button {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for Specific Sections */
+#About h2,
+#Skills h2,
+#Education h2,
+#WorkExperiences h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    font-size: 24px;
+    /* Increase font size */
+}
+
+#Skills ul {
+    padding-left: 20px;
+}
+
+#Skills ul ul {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+#Skills ul ul li {
+    margin-left: 20px;
+}
+
+#Education ul {
+    padding-left: 20px;
+}
+
+#WorkExperiences p {
+    margin-bottom: 10px;
+}
+
+#Home {
+    font-size: 40px;
+    font-style: italic;
+    color: #cec8c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-image:url(./imgs/hinh-nen-mau-xam-2k-dep-nhat_055859124.jpg);
+}
+
+#Home img {
+    width: 20%;
+    height: auto;
+    border-radius: 25%;
+    margin-bottom: 20px;
+}
+
+#Home p {
+    color: #b3afaf;
+    font-size: x-large;
+    /* Increase font size */
+}
+
+#Home span {
+    font-size: x-large;
+    font-style: italic;
+    color: #cec8c8;
+}
+
+#About {
+    
+    padding: 20px;
+    background-image:url(./imgs/hinh-nen-mau-hong-hoa-cuc-trang-cho-dien-thoai-17-14-28-12.jpg);
+}
+
+#About h2 {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.personal-info {
+    flex: 1;
+}
+
+.objective {
+    flex: 1;
+}
+
+.personal-info p,
+.objective p {
+    margin-bottom: 10px;
+}
+
+.objective h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#Skills{
+    
+    background-image:url(./imgs/hinh-nen-mau-hong-hoa-cuc-trang-cho-dien-thoai-17-14-28-12.jpg);
+}
+#Skills,
+#Education,
+#WorkExperiences {
+    padding: 20px;
+    background-image:url(./imgs/hinh-nen-mau-hong-hoa-cuc-trang-cho-dien-thoai-17-14-28-12.jpg);
+}
+
+#Education{
+    background-image:url(./imgs/hinh-nen-mau-hong-hoa-cuc-trang-cho-dien-thoai-17-14-28-12.jpg);
+}
+
+
+#Skills h2,
+#Education h2,
+#WorkExperiences h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#Skills ul,
+#Education ul,
+#WorkExperiences ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Skills ul li,
+#Education ul li,
+#WorkExperiences ul li {
+    margin-bottom: 10px;
+}
+
+#Skills ul ul,
+#Education ul ul,
+#WorkExperiences ul ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+#Skills ul ul li,
+#Education ul ul li,
+#WorkExperiences ul ul li {
+    margin-left: 20px;
+}
+
+#Skills ul li strong,
+#Education ul li strong,
+#WorkExperiences ul li strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.tolen{
+    font-size: 40px;
+    font-style: italic;
+}
